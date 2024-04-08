@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BooknDine Login</title>
+  <link rel="stylesheet" href="css/login_signup.css">
+  <script type="text/JavaScript" src="js/login.js"></script>
+  <script src="https://kit.fontawesome.com/cd21e51899.js" crossorigin="anonymous"></script>
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- <form class="log-forms forms">
+      <div class="inputs">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="username" placeholder="Username" required>
+      </div>
+      <div class="inputs">
+        <i class="fa-solid fa-eye-slash" style="color: #05070b;"></i>
+        <input type="password" name="password" placeholder="Password">
+      </div>
+      <div class="terms">
+        <p>Don't have account? <a href="signup.html">Sign Up</a></p>
+        <button type="submit">Log In</button>
+        <a href="index.html">
+          <button>Log In</button>
+        </a>
+      </div>
+    </form> -->
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h4 class="welcome-to">Welcome To</h4>
+              <h1 class="brandname"><i class="fa fa-utensils"></i>BooknDine</h1>
+              <!-- <form action="php/signup.php" class="requires-validation" novalidate> -->
+              <form action="index.html" class="requires-validation" novalidate>
+                <div class="col-md-12">
+                  <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                  <div class="invalid-feedback">Enter a valid Email ID!</div>
+                </div>
+    
+                <div class="col-md-12">
+                  <input class="form-control" type="password" name="password" placeholder="Password" pattern="^.{5,}$"
+                    required>
+                  <div class="invalid-feedback">Enter a valid Password!</div>
+                </div>
+
+                <div class="col-md-12">
+                  <p>Don't have account? <a href="signup.html">Sign Up</a></p>
+                </div>  
+
+                <div class="col-md-12 mt-2">
+                  <div class="form-button">
+                    <button id="submit" type="submit" class="btn btn-primary">Log In</button>
+                  </div>
+                </div>
+    
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<style>
+  .form-holder {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.form-holder .form-content {
+	position: relative;
+	text-align: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	padding: 60px;
+}
+
+.form-content .form-items {
+	box-shadow: 0px 10px 15px 15px rgb(0 0 0 / 30%);
+	background-color: rgb(0 0 0 / 75%);
+	border-radius: 10px;
+	padding: 40px;
+	display: inline-block;
+	width: 100%;
+	min-width: 540px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: left;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.form-content h3 {
+	text-align: left;
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	color: #ff9700;
+}
+
+.form-content h3.form-title {
+	margin-bottom: 30px;
+}
+
+.form-content p {
+	color: #fff;
+	text-align: left;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+
+
+.form-content label,
+.was-validated .form-check-input:invalid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
+	color: #fff;
+}
+
+.form-content input[type=text],
+.form-content input[type=password],
+.form-content input[type=email],
+.form-content input[type=tel],
+.form-content select {
+	width: 100%;
+	padding: 9px 20px;
+	text-align: left;
+	border: 0;
+	outline: 0;
+	border-radius: 6px;
+	background-color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+	color: black;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin-top: 16px;
+}
+
+
+.btn-primary {
+	background-color: #aeb9c3;
+	outline: none;
+	border: 0px;
+	box-shadow: none;
+	color: black;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: #ff9700;
+	outline: none !important;
+	border: none !important;
+	box-shadow: none;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+	background-color: #ff8000;
+	color: black;
+	outline: none !important;
+	border: none !important;
+	box-shadow: none;
+}
+
+.btn-check:checked+.btn-outline-secondary,
+.btn-check:active+.btn-outline-secondary,
+.btn-outline-secondary:active,
+.btn-outline-secondary.active,
+.btn-outline-secondary.dropdown-toggle.show {
+	background-color: #ff8000;
+}
+
+.form-content textarea {
+	position: static !important;
+	width: 100%;
+	padding: 8px 20px;
+	border-radius: 6px;
+	text-align: left;
+	background-color: #fff;
+	border: 0;
+	font-size: 15px;
+	font-weight: 300;
+	color: #8D8D8D;
+	outline: none;
+	resize: none;
+	height: 120px;
+	-webkit-transition: none;
+	transition: none;
+	margin-bottom: 14px;
+}
+
+.form-content textarea:hover,
+.form-content textarea:focus {
+	border: 0;
+	background-color: #ebeff8;
+	color: #8D8D8D;
+}
+
+.mv-up {
+	margin-top: -9px !important;
+	margin-bottom: 8px !important;
+}
+
+.invalid-feedback {
+	color: #ff3c25;
+}
+
+.valid-feedback {
+	color: #00da37;
+}
+</style>
+</html>

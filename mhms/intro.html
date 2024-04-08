@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Maid</title>
+    <link rel="shortcut icon" type="image/x-icon" href="admin/images/image 9.png" style="margin-top: 20px; margin-left: 20px;">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+        }
+
+        .iphone-pro-max {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+        }
+
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 92%;
+            padding: 88px 504px;
+            margin: 0px 0px 100px 79px;
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 27px;
+            margin-left: 77px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .myBtn {
+            display: inline-block;
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 10px;
+            text-align: center;
+            text-decoration: none;
+        
+        }
+        a:hover {
+  background-color: white;
+  color: #000;
+}
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+                margin: 0;
+            }
+        }
+
+        .content p{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    margin-left: -191px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 150% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+    </style>
+</head>
+<body>
+    <div class="iphone-pro-max">
+        <video autoplay muted loop id="myVideo">
+            <source src="clean.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+       
+        <div class="content">
+            <h1>HIRE MAID</h1>
+            <p>Quick and quality services from house cleaning...</p>
+            <a class="myBtn" href="admin\login.php" style="margin-left: 73px;margin-top: 36px;">Admin</a>
+            <a class="myBtn" href="customerlogin.html" style="margin-top: 30px;
+            margin-left: 73px;">Customer</a>
+                        <a class="myBtn" href="maid\login.php" style="margin-left: 73px;margin-top: 36px;">Maid</a>
+
+        </div>
+    </div>
+</body>
+</html>
+  
