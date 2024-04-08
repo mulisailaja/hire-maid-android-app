@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        />
+
+    <item android:id="@+id/service"
+        android:visible="true"
+        android:title="Services"
+      />
+
+    <item android:id="@+id/find_maid"
+        android:visible="true"
+        android:title="Find a Maid"
+        />
+
+    <item android:id="@+id/maid_status"
+        android:title="Maid Status"
+        android:visible="true"
+        />
+    <item android:id="@+id/logout"
+        android:title="LogOut"
+        android:visible="true"
+        />
+
+</menu>

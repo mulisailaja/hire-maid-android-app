@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AdminHomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/services_background"
+            android:layout_width="150dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="150dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Category"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white"
+                android:hint="View Details"
+                android:id="@+id/totalCategory"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_signup_button"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/services_background"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="150dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listed Maids"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white"
+                android:hint="View Details"
+                android:id="@+id/listMaid"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_signup_button"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/services_background"
+            android:layout_width="150dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="150dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Request"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white"
+                android:hint="View Details"
+                android:id="@+id/newRequest"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_signup_button"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/services_background"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="150dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assign Request"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white"
+                android:hint="View Details"
+                android:id="@+id/assignRequest"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_signup_button"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/services_background"
+            android:layout_width="150dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="150dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rejected Requests"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white"
+                android:hint="View Details"
+                android:id="@+id/cancelRequest"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_signup_button"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/services_background"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="150dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Request"
+                android:textStyle="bold"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:textColorHint="@color/white"
+                android:hint="View Details"
+                android:id="@+id/totalRequest"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_signup_button"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

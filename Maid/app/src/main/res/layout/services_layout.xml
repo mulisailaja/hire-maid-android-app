@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:id="@+id/services_view"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/services_background"
+        android:layout_height="match_parent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="150dp"
+            android:id="@+id/image"
+            android:src="@drawable/cooking"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            app:shapeAppearanceOverlay="@style/roundedImageStyle"
+            android:layout_height="100dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/serviceWork"
+            android:layout_marginTop="10dp"
+            android:text="Cooking"
+            android:textSize="15dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/adminHome"
+        android:title="Home"  />
+
+    <item android:id="@+id/category"
+        android:title="Category"  />
+
+    <item android:id="@+id/maid"
+        android:title="Maid"  />
+
+    <item android:id="@+id/request"
+        android:title="Request"  />
+
+    <item android:id="@+id/profile"
+        android:title="Profile"  />
+
+    <item android:id="@+id/logout"
+        android:title="LogOut"
+        android:visible="true"
+        />
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AddCategoryFragment">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <ProgressBar
+          android:id="@+id/progress"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="0dp"
+          android:indeterminate="true"
+          android:visibility="gone"
+          android:paddingTop="0dp" />
+  </LinearLayout>
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+       android:layout_marginTop="220dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="290dp"
+            android:hint="Category Name"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/categoryName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_marginBottom="20dp"
+           android:layout_width="290dp"
+           android:hint="Per Hour Amount"
+           android:layout_gravity="center"
+           android:layout_height="wrap_content">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:inputType="number"
+               android:id="@+id/perHourAmount"
+               android:layout_width="match_parent"
+               android:layout_height="55dp" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_marginBottom="20dp"
+           android:layout_width="290dp"
+           android:hint="Monthly Amount"
+           android:layout_gravity="center"
+           android:layout_height="wrap_content">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/monthlyAmount"
+               android:inputType="number"
+               android:layout_width="match_parent"
+               android:layout_height="55dp" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+       <LinearLayout
+           android:gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_width="150dp"
+               android:layout_gravity="center"
+               android:textColorHint="@color/white"
+               android:hint="Add"
+               android:id="@+id/addCategory"
+               android:background="@drawable/login_signup_button"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".login.SignInFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="150dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/for_first_page_image"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/loginUsSignUp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:text="SignUp"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="290dp"
+                android:layout_gravity="center"
+                android:textColor="@color/pencil"
+                android:textColorHint="@color/pencil"
+                android:hint="Username"
+                android:background="@drawable/login_signup_text"
+                android:paddingLeft="15dp"
+                android:id="@+id/userName"
+                android:layout_marginBottom="20dp"
+                android:layout_height="50dp"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="290dp"
+                android:layout_gravity="center"
+                android:textColor="@color/pencil"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/email"
+                android:textColorHint="@color/pencil"
+                android:hint="Email id"
+                android:paddingLeft="15dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/login_signup_text"
+                android:layout_height="50dp"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="290dp"
+                android:layout_gravity="center"
+                android:textColor="@color/pencil"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/phone"
+                android:textColorHint="@color/pencil"
+                android:hint="Phone"
+                android:paddingLeft="15dp"
+                android:inputType="number"
+                android:background="@drawable/login_signup_text"
+                android:layout_height="50dp"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="290dp"
+                android:layout_gravity="center"
+                android:textColor="@color/pencil"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/password"
+                android:textColorHint="@color/pencil"
+                android:hint="Password"
+                android:paddingLeft="15dp"
+                android:inputType="textPassword"
+                android:background="@drawable/login_signup_text"
+                android:layout_height="50dp"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="290dp"
+                android:layout_gravity="center"
+                android:textColor="@color/pencil"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/con_password"
+                android:textColorHint="@color/pencil"
+                android:hint="Confirnm Password"
+                android:paddingLeft="15dp"
+                android:inputType="textPassword"
+                android:background="@drawable/login_signup_text"
+                android:layout_height="50dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColorHint="@color/white"
+                android:hint="Create Account"
+                android:id="@+id/createAccount"
+                android:background="@drawable/login_signup_button"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/maid_home"
+        android:title="Home"  />
+
+    <item android:id="@+id/addMaid"
+        android:visible="true"
+        android:title="Add Maid"  />
+
+    <item android:id="@+id/assignRequest"
+        android:title="Assgn Request"
+        android:visible="true" />
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:visible="true" />
+
+    <item android:id="@+id/logout"
+        android:title="LogOut"
+        android:visible="true"
+        />
+</menu>
